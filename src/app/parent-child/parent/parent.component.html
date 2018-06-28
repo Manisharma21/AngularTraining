@@ -1,0 +1,5 @@
+<p>
+  parent works! I am {{ myName }}
+</p>
+<input type="text" placeholder="Enter Your Name" [(ngModel)]='myName'/>
+<cts-child [myName]='myName' (parcelToParent)="recivedFromChild($event)"></cts-child>

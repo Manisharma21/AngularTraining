@@ -1,0 +1,7 @@
+<hr>
+<p>
+  child works! I am {{ myName }}'s Child
+</p>
+<br>
+<input type="text" [(ngModel)]="myName">
+<button (click)="sendToParent(myName)">Click to Send to Parent</button>
